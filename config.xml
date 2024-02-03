@@ -57,6 +57,28 @@
                 </replica>
             </shard>
         </company_cluster>
+        <!--
+        <all-replicated>
+            <shard>
+                <replica>
+                    <host>clickhouse01</host>
+                    <port>9000</port>
+                </replica>
+                <replica>
+                    <host>clickhouse02</host>
+                    <port>9000</port>
+                </replica>
+                <replica>
+                    <host>clickhouse03</host>
+                    <port>9000</port>
+                </replica>
+                <replica>
+                    <host>clickhouse04</host>
+                    <port>9000</port>
+                </replica>
+            </shard>
+        </all-replicated>
+        -->
     </remote_servers>
 
     <zookeeper>
