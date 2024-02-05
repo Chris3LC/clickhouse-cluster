@@ -12,15 +12,15 @@ run clickhouse cluster `company_cluster` with docker-compose
 make config up
 ```
 
-Containers will be available in docker network `172.23.0.0/24`
+Containers will be available in docker network `172.32.0.0/24`
 
 | Container    | Address
 | ------------ | -------
-| zookeeper    | 172.23.0.10
-| clickhouse01 | 172.23.0.11
-| clickhouse02 | 172.23.0.12
-| clickhouse03 | 172.23.0.13
-| clickhouse04 | 172.23.0.14
+| zookeeper    | 172.32.0.10
+| clickhouse01 | 172.32.0.11
+| clickhouse02 | 172.32.0.12
+| clickhouse03 | 172.32.0.13
+| clickhouse04 | 172.32.0.14
 
 ## Profiles
 
@@ -31,7 +31,7 @@ Containers will be available in docker network `172.23.0.0/24`
 
 Login to clickhouse01 console (first node's ports are mapped to localhost)
 ```sh
-clickhouse-client -h localhost
+clickhouse-client --port 9001 -h localhost
 ```
 
 Or open `clickhouse-client` inside any container
